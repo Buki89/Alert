@@ -1,0 +1,217 @@
+$xs-size: 320px;
+$s-size: 375px;
+$m-size: 420px;
+$l-size: 480px;
+$xl-size: 600px;
+
+.button {
+  background-color: #004b8d;
+  border-radius: 20px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  height: 180px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #d9f2d9;
+  display: flex;
+  align-items: center;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+
+.modal-red {
+  @extend .modal;
+  background-color: #ffe6e6;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+
+.modal-blue {
+  @extend .modal;
+  background-color: #f2e6ff;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+
+.container {
+  display: flex;
+  @media (max-width: $l-size) {
+    flex-direction: column;
+  }
+  @media (max-width: $s-size) {
+    flex-direction: row;
+  }
+}
+
+.text {
+  font-size: 40px;
+  color: #215f21;
+  @media (max-width: $xl-size) {
+    font-size: 30px;
+  }
+  @media (max-width: $l-size) {
+    font-size: 25px;
+  }
+  @media (max-width: $s-size) {
+    font-size: 20px;
+    margin-right: 0px;
+  }
+}
+
+.smallerText {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  @media (max-width: $l-size) {
+    font-size: 20px;
+  }
+  @media (max-width: $s-size) {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.text-red {
+  font-size: 40px;
+  color: #ff1a1a;
+  @media (max-width: $xl-size) {
+    font-size: 30px;
+  }
+  @media (max-width: $l-size) {
+    font-size: 25px;
+  }
+  @media (max-width: $s-size) {
+    font-size: 20px;
+    margin-right: 0px;
+  }
+}
+
+.text-blue {
+  font-size: 40px;
+  color: #4d0099;
+  margin: 0;
+  @media (max-width: $xl-size) {
+    font-size: 30px;
+  }
+  @media (max-width: $l-size) {
+    font-size: 25px;
+  }
+  @media (max-width: $s-size) {
+    font-size: 20px;
+    margin-right: 0px;
+  }
+}
+
+.image {
+  height: 80px;
+  width: auto;
+  margin: 0 40px;
+  @media (max-width: $xl-size) {
+    height: 60px;
+    margin: 0 30px;
+  }
+  @media (max-width: $l-size) {
+    height: 50px;
+    margin: 0 20px;
+  }
+  @media (max-width: $s-size) {
+    height: 40px;
+    margin: 0 10px;
+  }
+}
+
+.stripe {
+  height: 180px;
+  width: 20px;
+  background-color: #215f21;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+
+.stripe-red {
+  @extend .stripe;
+  background-color: #ff1a1a;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+.stripe-blue {
+  @extend .stripe;
+  background-color: #4d0099;
+  @media (max-width: $xl-size) {
+    height: 150px;
+  }
+  @media (max-width: $l-size) {
+    height: 120px;
+  }
+  @media (max-width: $s-size) {
+    height: 90px;
+  }
+}
+
+.box {
+  display: flex;
+}
+
+.link {
+  font-size: 26px;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  margin-right: 5px;
+
+  @media (max-width: $l-size) {
+    font-size: 20px;
+  }
+  @media (max-width: $s-size) {
+    font-size: 15px;
+    margin-right: 2px;
+  }
+}
